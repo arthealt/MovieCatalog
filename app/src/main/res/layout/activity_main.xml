@@ -4,16 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".application.activity.MainActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:contentInsetStart="8dp"
+        app:contentInsetEnd="8dp"
         android:background="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/search_background"
+            android:theme="@style/SearchView"
+            app:closeIcon="@drawable/ic_close"
+            app:queryHint="@string/search_hint"
+            app:iconifiedByDefault="false"
+            app:searchIcon="@drawable/ic_search"/>
+
+
+    </com.google.android.material.appbar.MaterialToolbar>
 
     <FrameLayout
         android:layout_width="match_parent"

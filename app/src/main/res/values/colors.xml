@@ -2,8 +2,8 @@
 <resources>
     <color name="colorPrimary">#222325</color>
     <color name="colorPrimaryDark">#141515</color>
-    <!--<color name="colorSecondary">#2443ff</color>
-    <color name="colorSecondaryDark">#2443ff</color>-->
+    <color name="colorSecondary">#435eff</color>
+    <color name="colorSecondaryDark">#435eff</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#a7a7a7</color>
